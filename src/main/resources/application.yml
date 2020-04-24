@@ -1,0 +1,21 @@
+# yml
+---
+spring:
+    application:
+        name:  demo_crud
+
+    datasource:
+        driver-class-name: com.mysql.jdbc.Driver
+        url: jdbc:mysql://localhost:3306/demo_crud?autoreconnect=true
+        username: "root"
+        password: ""
+    jpa:
+        hibernate:
+            ddl-auto: update
+
+jwt:
+    secret: "private_key"
+        
+  
+server:
+  port: 8010          
